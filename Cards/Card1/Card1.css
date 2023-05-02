@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    padding: 3rem 0 3rem 2rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0 0 1.5rem;
+    position: relative;
+}
+
+.card {
+    box-shadow: -2rem 0 3rem -2rem #000;
+    scroll-snap-align: start;
+    min-width: 220px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: linear-gradient(285deg, #434343, #262626);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: all .4s ease-in-out;
+    margin: 0;
+    position: relative;
+    min-height: 350px;
+}
+
+.card:hover {
+    transition: all .4s ease-in-out;
+    transform: translate(-0.5rem, -1rem) rotate(-10deg)
+}
+
+.content {
+    height: 20%;
+    font-family: cursive;
+}
+
+.img {
+    height: 80%;
+}
